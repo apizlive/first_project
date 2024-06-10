@@ -1,0 +1,41 @@
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<title>Creation of Form</title>
+</head>
+<body>
+<form>
+<h1>Registration Form</h1>
+<label for="Username" >Username:</label>
+<input type="text" id="Username" name="Username"><br>
+
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+
+<br>
+<label for="Password">Password:</label>
+<input type="Password" id="Password" name="Password"><br>
+<br>
+<input type="radio" class="gender"  id="Male" value="Male" name="gender" for="Male">Male<br>
+<input type="radio" class="gender"  id="Female" value="Male" name="gender" for="Female">Female<br>
+<br>
+
+<input type="button" value="Submit" onclick="getData()">
+<p id="output">Click the'Submit' button</p>
+
+<script>
+
+function getData() {
+	
+	let tmp = document.getElementById('Username').value
+	console.log(tmp);
+	document.getElementById('output').innerHTML = tmp;
+	event.preventDefault();
+	}
+	</script>
+</form>
+</body>
+</html>
